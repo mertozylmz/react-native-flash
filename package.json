@@ -1,6 +1,6 @@
 {
   "name": "@mertozyilmazz/react-native-flash",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "It helps to turn the phone's flash on and off.",
   "main": "index.js",
   "scripts": {
