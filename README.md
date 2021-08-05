@@ -7,30 +7,29 @@ Simple API to turn on and off flash in react native
 
 ## Installation
 
-    npm install https://github.com/mertozylmz/react-native-flash
+    npm install @mertozyilmazz/react-native-flash
 	or
-	yarn add https://github.com/mertozylmz/react-native-flash
+	yarn add @mertozyilmazz/react-native-flash
 
 ## Usage
 
-In your `index.android.js`:
+In your `*.js`:
 
 ```javascript
-import Flash from 'react-native-flash';
+	import Flash from 'react-native-flash'
 
+	Flash.turnOnFlash() // turn on flash
 
-		Flash.turnOnFlash(); // turn on flash
+	Flash.turnOffFlash() // turn off flash
 
-		Flash.turnOffFlash(); // turn off flash
+	/*Has flash checks if the phone has flash available.
+		Since all communication between react native and native modules is asychrounous, it takes a success callback, and failure callback. atm both callbacks are necessary.
 
-		/*Has flash checks if the phone has flash available.
-		  Since all communication between react native and native modules is asychrounous, it takes a success callback, and failure callback. atm both callbacks are necessary.
-
-		   */
-		Flash.hasFlash(function(){
-			Flash.turnOnFlash();
-		},function(){
-			alert("You do not have flash")
-		});
-});
+		*/
+	Flash.hasFlash(function(){
+		Flash.turnOnFlash()
+	},function(){
+		alert("You do not have flash")
+	})
+})
 ```
