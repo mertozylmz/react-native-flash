@@ -16,7 +16,7 @@ Simple API to turn on and off flash in react native
 In your `*.js`:
 
 ```javascript
-	import Flash from 'react-native-flash'
+	import Flash from '@mertozyilmazz/react-native-flash'
 
 	Flash.turnOnFlash() // turn on flash
 
